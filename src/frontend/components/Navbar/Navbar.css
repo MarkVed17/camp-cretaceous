@@ -1,0 +1,38 @@
+.header-logo-img {
+  width: auto;
+  height: 80px;
+}
+
+.header-nav {
+  margin-top: 1rem;
+  margin: 0;
+  background: none;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.nav-search {
+  gap: 1rem;
+}
+
+.nav-searchbar {
+  color: var(--ghost-color);
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  width: 10rem;
+}
+
+.header-nav-links > nav > ul {
+  padding-right: 3rem;
+}
+
+.header-link {
+  color: var(--base-gray-color);
+  text-transform: uppercase;
+}
+
+.header-link-active {
+  text-decoration: none;
+  color: var(--ghost-color);
+}
