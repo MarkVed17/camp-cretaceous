@@ -1,0 +1,39 @@
+/* Quote Banner */
+
+.home-screen-row {
+  height: 100vh;
+}
+
+.home-page-quote {
+  color: var(--font-color);
+  color: #f3f3f3;
+  background-color: #c6a20b;
+  width: 80vw;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-quote {
+  color: var(--font-color);
+  color: #f3f3f3;
+  background-color: #c6a20b;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: auto;
+}
+
+.quote-border {
+  border: 0;
+  margin: 0;
+  padding: 2rem;
+}
+
+.quote-writer {
+  padding: 0 1.5rem 1.5rem 0;
+}

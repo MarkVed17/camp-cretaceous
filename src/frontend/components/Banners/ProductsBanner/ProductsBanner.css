@@ -1,0 +1,44 @@
+/* Products Banner */
+
+.home-screen-row {
+  height: 100vh;
+}
+
+.home-sub-heading {
+  font-family: Jurassic Park;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 0.5rem;
+  font-size: 4.5rem;
+  color: var(--font-color);
+  flex-basis: 100%;
+}
+
+.cards-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: auto;
+  width: 75%;
+  min-height: 65vh;
+}
+
+.home-link {
+  display: block;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin: 3rem auto 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.home-link > a {
+  text-decoration: none;
+  color: #101212;
+}
+
+.home-link > .arrow {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #101212;
+}
