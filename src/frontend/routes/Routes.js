@@ -5,10 +5,10 @@ import {
   HomeScreen,
   ProductsScreen,
   WishlistScreen,
+  SignInScreen,
+  SignUpScreen,
 } from "../screens";
 import Mockman from "mockman-js";
-import { SignInScreen } from "../screens/SignInScreen/SignInScreen";
-import { SignUpScreen } from "../screens/SignUpScreen/SignUpScreen";
 
 const Router = () => {
   return (
