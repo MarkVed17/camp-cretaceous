@@ -1,0 +1,50 @@
+/* Hero Banner */
+
+.home-screen-row {
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-main {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+.hero-img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+.hero-img-subtitle {
+  font-size: 2.2rem;
+  color: #b9b9b9;
+  text-transform: none;
+  text-align: center;
+  font-family: Jurassic Park;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+.hero-img-subtitle-2 {
+  font-size: 8rem;
+  color: rgb(240, 240, 240);
+  text-transform: none;
+  font-family: Jurassic Park;
+  letter-spacing: 5px;
+  color: #ffff00f3;
+  text-shadow: -5px -5px 0 #156b9c, 5px -5px 0 #156b9c, -5px 5px 0 #156b9c,
+    5px 5px 0 #156b9c;
+  opacity: 0.9;
+  margin: 0;
+}

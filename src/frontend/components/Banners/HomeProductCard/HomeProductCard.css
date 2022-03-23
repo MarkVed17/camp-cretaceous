@@ -1,0 +1,26 @@
+/* Home Product Card */
+
+.card__primary-action {
+  height: 50vh;
+}
+
+.card__media {
+  height: 30vh;
+  margin: auto;
+  width: 245px;
+  max-width: 75%;
+  padding: 1rem;
+}
+
+.card__secondary-text-over-media {
+  font-size: 0;
+}
+
+.card__title {
+  margin-bottom: 0;
+}
+
+.card__subtitle {
+  color: var(--base-gray-color);
+  margin-top: 0.5rem;
+}

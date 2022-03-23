@@ -58,7 +58,7 @@ function Footer() {
 
         {/* Copyright  */}
         <div class="footer-copyright">
-          <span>Copyright © 2022</span>
+          <span>Copyright © 2022 {" "}</span>
           <span>All rights reserved</span>
         </div>
       </footer>
