@@ -60,35 +60,35 @@ function Filters() {
           </label>
         </div>
         <div>
-          <input
-            type="radio"
-            id="3star_above"
-            name="ratingfilter"
-            value="3starabove"
-          />
           <label for="3star_above" className="filter-radio-label">
+            <input
+              type="radio"
+              id="3star_above"
+              name="ratingfilter"
+              value="3starabove"
+            />
             3 star & above
           </label>
         </div>
         <div>
-          <input
-            type="radio"
-            id="2star_above"
-            name="ratingfilter"
-            value="2starabove"
-          />
           <label for="2star_above" className="filter-radio-label">
+            <input
+              type="radio"
+              id="2star_above"
+              name="ratingfilter"
+              value="2starabove"
+            />
             2 star & above
           </label>
         </div>
         <div>
-          <input
-            type="radio"
-            id="1star_above"
-            name="ratingfilter"
-            value="1starabove"
-          />
           <label for="1star_above" className="filter-radio-label">
+            <input
+              type="radio"
+              id="1star_above"
+              name="ratingfilter"
+              value="1starabove"
+            />
             1 star & above
           </label>
         </div>
@@ -96,24 +96,24 @@ function Filters() {
         {/* Filter by Sorting */}
         <h3>Sort By</h3>
         <div>
-          <input
-            type="radio"
-            id="price_lowtohigh"
-            name="sortfilter"
-            value="pricelowtohigh"
-          />
           <label for="price_lowtohigh" className="filter-radio-label">
+            <input
+              type="radio"
+              id="price_lowtohigh"
+              name="sortfilter"
+              value="pricelowtohigh"
+            />
             Price: Low to High
           </label>
         </div>
         <div>
-          <input
-            type="radio"
-            id="price_hightolow"
-            name="sortfilter"
-            value="pricehightolow"
-          />
           <label for="price_hightolow" className="filter-radio-label">
+            <input
+              type="radio"
+              id="price_hightolow"
+              name="sortfilter"
+              value="pricehightolow"
+            />
             Price: High to Low
           </label>
         </div>

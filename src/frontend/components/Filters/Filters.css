@@ -45,3 +45,7 @@
 .filter-radio-label {
   color: var(--base-gray-color);
 }
+
+.filter-radio-label:hover {
+  cursor: pointer;
+}
