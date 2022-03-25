@@ -6,7 +6,7 @@ function ProductCard({ _id, name, price, categoryName, imageUrl, rating }) {
   return (
     <div class="card product-card">
       <div class="card__primary-action">
-        <img class="product-card__media" src={imageUrl}></img>
+        <img class="product-card__media" src={imageUrl} alt={name}></img>
         <button class="card-fav-icon">
           <span class="material-icons">favorite_outline</span>
         </button>
