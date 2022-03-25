@@ -1,0 +1,47 @@
+/* Filters */
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1.5rem;
+  min-width: 15rem;
+  width: 30%;
+  padding: 0 2rem 2rem 2rem;
+  box-shadow: 10px 11px 14px -8px rgba(0, 0, 0, 0.5);
+}
+
+.filter-clear-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  margin-top: 5rem;
+}
+
+.filter-container > div > h2 {
+  height: fit-content;
+  margin: 0;
+}
+
+.filter-container > div > button {
+  height: fit-content;
+  padding: 2px;
+  font-size: 0.875rem;
+  color: var(--accent-color);
+}
+
+.category-list {
+  font-family: "PT Sans Narrow", sans-serif;
+  background: var(--body-bg-color);
+  width: 80%;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  color: var(--font-color);
+  border: 1px solid #242424;
+}
+
+.filter-radio-label {
+  color: var(--base-gray-color);
+}
