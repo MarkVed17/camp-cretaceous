@@ -7,13 +7,9 @@
 .card__media {
   height: 30vh;
   margin: auto;
-  width: 245px;
+  width: 15rem;
   max-width: 75%;
   padding: 1rem;
-}
-
-.card__secondary-text-over-media {
-  font-size: 0;
 }
 
 .card__title {

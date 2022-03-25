@@ -5,12 +5,12 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
-      <footer class="footer-container">
+      <footer className="footer-container">
         {/* Logo + Copyright */}
-        <div class="footer-brand">
+        <div className="footer-brand">
           <Link to="/">
             <img
-              class="footer-logo-img"
+              className="footer-logo-img"
               src="/assets/Logos/Home_Camp_Cretaceous_Logo.svg"
               alt="jurassic-park-logo"
             />
@@ -18,8 +18,8 @@ function Footer() {
         </div>
 
         {/* Links */}
-        <div class="footer-links">
-          <h1 class="footer-heading">Company</h1>
+        <div className="footer-links">
+          <h1 className="footer-heading">Company</h1>
           <Link to="/" className="footer-link">
             About Us
           </Link>
@@ -32,32 +32,32 @@ function Footer() {
         </div>
 
         {/* Social Media Presence */}
-        <div class="footer-social-media">
-          <h1 class="footer-heading">Connect with us</h1>
-          <span class="footer-icons">
-            <i class="fa-brands fa-instagram footer-icon"></i>
-            <i class="fa-brands fa-twitter footer-icon"></i>
-            <i class="fa-brands fa-facebook-f footer-icon"></i>
+        <div className="footer-social-media">
+          <h1 className="footer-heading">Connect with us</h1>
+          <span className="footer-icons">
+            <i className="fa-brands fa-instagram footer-icon"></i>
+            <i className="fa-brands fa-twitter footer-icon"></i>
+            <i className="fa-brands fa-facebook-f footer-icon"></i>
           </span>
         </div>
 
         {/* Newsletter */}
-        <div class="footer-subscribe">
-          <h1 class="footer-heading">Subscribe</h1>
-          <div class="std-search">
+        <div className="footer-subscribe">
+          <h1 className="footer-heading">Subscribe</h1>
+          <div className="std-search">
             <input
               type="text"
               placeholder="Enter Email Id"
-              class="input standard subscribe"
+              className="input standard subscribe"
             />
-            <button class="btn btn-brand btn-accent subscribe-btn">
+            <button className="btn btn-brand btn-accent subscribe-btn">
               Subscribe
             </button>
           </div>
         </div>
 
         {/* Copyright  */}
-        <div class="footer-copyright">
+        <div className="footer-copyright">
           <span>Copyright © 2022 {" "}</span>
           <span>All rights reserved</span>
         </div>

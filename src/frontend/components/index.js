@@ -6,3 +6,7 @@ export { QuoteBanner } from "./Banners/QuoteBanner/QuoteBanner";
 export { MovieLogosBanner } from "./Banners/MovieLogosBanner/MovieLogosBanner";
 export { ProductsBanner } from "./Banners/ProductsBanner/ProductsBanner";
 export { HomeProductCard } from "./Banners/HomeProductCard/HomeProductCard";
+export { Filters } from "./Filters/Filters";
+export { ProductsListing } from "./ProductsListing/ProductsListing";
+export { ProductCard } from "./ProductCard/ProductCard";
+export { StarRating } from "./StarRating/StarRating";
