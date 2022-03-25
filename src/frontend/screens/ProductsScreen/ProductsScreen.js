@@ -4,7 +4,7 @@ import "./ProductsScreen.css";
 
 function ProductsScreen() {
   return (
-    <div class="main-container">
+    <div className="main-container">
       <Filters />
       <ProductsListing />
     </div>

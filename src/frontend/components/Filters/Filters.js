@@ -3,17 +3,21 @@ import "./Filters.css";
 
 function Filters() {
   return (
-    <div class="filter-container">
+    <div className="filter-container">
       {/* <!-- Filter Heading --> */}
-      <div class="filter-clear-box">
+      <div className="filter-clear-box">
         <h2>Filters</h2>
-        <button class="btn btn-brand">Clear All</button>
+        <button className="btn btn-brand">Clear All</button>
       </div>
 
       {/* Filter by Categories*/}
       <div>
-        <h3 class="filter-label">Category</h3>
-        <select name="category_list" id="categorylist" class="category-list">
+        <h3 className="filter-label">Category</h3>
+        <select
+          name="category_list"
+          id="categorylist"
+          className="category-list"
+        >
           <option value="any">Any</option>
           <option value="Jurassic Park">Jurassic Park</option>
           <option value="The Lost World">The Lost World</option>
@@ -45,16 +49,15 @@ function Filters() {
         {/* Filter by Ratings */}
         <h3>Rating</h3>
         <div>
-          <input
-            type="radio"
-            id="4star_above"
-            name="ratingfilter"
-            value="4starabove"
-          />
-          <label for="4star_above" class="filter-radio-label">
-            4 star & above{" "}
+          <label for="4star_above" className="filter-radio-label">
+            <input
+              type="radio"
+              id="4star_above"
+              name="ratingfilter"
+              value="4starabove"
+            />
+            4 star & above
           </label>
-          <br />
         </div>
         <div>
           <input
@@ -63,10 +66,9 @@ function Filters() {
             name="ratingfilter"
             value="3starabove"
           />
-          <label for="3star_above" class="filter-radio-label">
+          <label for="3star_above" className="filter-radio-label">
             3 star & above
           </label>
-          <br />
         </div>
         <div>
           <input
@@ -75,7 +77,7 @@ function Filters() {
             name="ratingfilter"
             value="2starabove"
           />
-          <label for="2star_above" class="filter-radio-label">
+          <label for="2star_above" className="filter-radio-label">
             2 star & above
           </label>
         </div>
@@ -86,7 +88,7 @@ function Filters() {
             name="ratingfilter"
             value="1starabove"
           />
-          <label for="1star_above" class="filter-radio-label">
+          <label for="1star_above" className="filter-radio-label">
             1 star & above
           </label>
         </div>
@@ -100,10 +102,9 @@ function Filters() {
             name="sortfilter"
             value="pricelowtohigh"
           />
-          <label for="price_lowtohigh" class="filter-radio-label">
+          <label for="price_lowtohigh" className="filter-radio-label">
             Price: Low to High
           </label>
-          <br />
         </div>
         <div>
           <input
@@ -112,10 +113,9 @@ function Filters() {
             name="sortfilter"
             value="pricehightolow"
           />
-          <label for="price_hightolow" class="filter-radio-label">
+          <label for="price_hightolow" className="filter-radio-label">
             Price: High to Low
           </label>
-          <br />
         </div>
       </div>
     </div>

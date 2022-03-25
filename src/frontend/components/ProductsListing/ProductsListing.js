@@ -6,12 +6,12 @@ import "./ProductsListing.css";
 function ProductsListing() {
   const { products } = useProducts();
   return (
-    <div class="heading-products-container">
+    <div className="heading-products-container">
       {/* Heading */}
       <h1>All Products</h1>
 
       {/* <!-- All Product Cards --> */}
-      <div class="products-container">
+      <div className="products-container">
         {products.map(
           ({ _id, name, price, categoryName, imageUrl, rating }) => (
             <ProductCard
