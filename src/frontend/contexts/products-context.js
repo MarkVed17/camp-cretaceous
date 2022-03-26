@@ -1,5 +1,6 @@
 import { useState, useEffect, createContext, useContext } from "react";
 import axios from "axios";
+
 const ProductsContext = createContext();
 
 const ProductsProvider = ({ children }) => {
