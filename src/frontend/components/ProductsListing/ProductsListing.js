@@ -1,10 +1,9 @@
 import React from "react";
-import { useProducts } from "../../contexts";
 import { ProductCard } from "../ProductCard/ProductCard";
 import "./ProductsListing.css";
 
-function ProductsListing() {
-  const { products } = useProducts();
+function ProductsListing({finalProducts}) {
+  // const { products } = useProducts();
   return (
     <div className="heading-products-container">
       {/* Heading */}
@@ -12,7 +11,7 @@ function ProductsListing() {
 
       {/* <!-- All Product Cards --> */}
       <div className="products-container">
-        {products.map(
+        {finalProducts.map(
           ({ _id, name, price, categoryName, imageUrl, rating }) => (
             <ProductCard
               key={_id}
