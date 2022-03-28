@@ -32,7 +32,35 @@
   text-transform: uppercase;
 }
 
+.header-link:hover {
+  color: var(--ghost-color);
+}
+
 .header-link-active {
   text-decoration: none;
   color: var(--ghost-color);
+}
+
+.header-account-link {
+  padding-bottom: 5px;
+}
+
+.header-account-link:hover {
+  cursor: pointer;
+  color: var(--ghost-color);
+  border-bottom: 1.5px solid var(--base-gray-color);
+}
+
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  width: 4.5rem;
+  position: fixed;
+  top: 3.5rem;
+  right: 1.9rem;
+  z-index: 2;
+  font-size: 1.7rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-family: Jurassic Park;
 }
