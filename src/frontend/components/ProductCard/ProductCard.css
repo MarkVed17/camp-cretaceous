@@ -15,6 +15,10 @@
   color: var(--base-gray-color);
 }
 
+.card-fav-icon > .material-icons.wishlist-add {
+  color: var(--accent-color);
+}
+
 .card-fav-icon:hover {
   cursor: pointer;
 }
@@ -48,8 +52,11 @@
 .product-price {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  color: var(--base-gray-color);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-price > span {
+  color: var(--neutral-color);
 }
 
 .card__action-buttons > .btn {
