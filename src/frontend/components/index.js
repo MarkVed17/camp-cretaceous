@@ -11,3 +11,4 @@ export { ProductsListing } from "./ProductsListing/ProductsListing";
 export { ProductCard } from "./ProductCard/ProductCard";
 export { StarRating } from "./StarRating/StarRating";
 export { PrivateRoute } from "./PrivateRoute/PrivateRoute";
+export { WishlistProductCard } from "./WishlistProductCard/WishlistProductCard";
