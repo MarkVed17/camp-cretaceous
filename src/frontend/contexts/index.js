@@ -5,3 +5,4 @@ export {
   FiltersProvider,
 } from "./filters-context";
 export { useAuth, AuthProvider } from "./auth-context";
+export { useWishlist, WishlistProvider } from "./wishlist-context";
