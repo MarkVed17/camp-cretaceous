@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin: auto;
+  margin: 3rem auto 0 auto;
   gap: 1rem;
   padding-bottom: 2rem;
 }
