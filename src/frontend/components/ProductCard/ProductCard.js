@@ -1,7 +1,7 @@
 import React from "react";
 import { StarRating } from "../StarRating/StarRating";
 import { useNavigate } from "react-router-dom";
-import { useAuth, useWishlist } from "../../contexts";
+import { useAuth, useWishlist, useCart } from "../../contexts";
 import "./ProductCard.css";
 
 function ProductCard({ product }) {
@@ -11,6 +11,7 @@ function ProductCard({ product }) {
   const navigate = useNavigate();
   const { wishlist, moveProductToWishlist, removeProductFromWishlist } =
     useWishlist();
+  const { cart, addProductToCart } = useCart();
 
   return (
     <div className="card product-card">
@@ -57,9 +58,23 @@ function ProductCard({ product }) {
             <button className="btn btn-brand btn-accent buy-btn">
               Buy Now
             </button>
-            <button className="btn btn-outline btn-accent cart-btn">
-              Add to Cart
-            </button>
+            {cart.find((cartProduct) => cartProduct._id === _id) ? (
+              <button
+                className="btn btn-outline btn-accent add-to-cart-btn"
+                onClick={() => navigate("/cart")}
+              >
+                Go to Cart
+              </button>
+            ) : (
+              <button
+                className="btn btn-outline btn-accent add-to-cart-btn"
+                onClick={() =>
+                  auth.status ? addProductToCart(product) : navigate("/signin")
+                }
+              >
+                Add to Cart
+              </button>
+            )}
           </div>
         </div>
       </div>

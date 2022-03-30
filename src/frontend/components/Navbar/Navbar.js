@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AUTH_TOKEN } from "../../constants/authConstants";
-import { useAuth } from "../../contexts";
+import { useAuth, useCart } from "../../contexts";
 import "./Navbar.css";
 
 function Navbar() {
   const [dropDownMenu, setDropDownMenu] = useState(false);
   const { auth, setAuth } = useAuth();
+  const { cartSummary } = useCart();
+  const { cartTotalProducts } = cartSummary;
 
   const signOutHandler = (setAuth) => {
     localStorage.removeItem(AUTH_TOKEN);
@@ -61,6 +63,11 @@ function Navbar() {
                 >
                   Cart
                 </NavLink>
+                {cartTotalProducts !== 0 && (
+                  <span className="badge badge-position">
+                    {cartTotalProducts}
+                  </span>
+                )}
               </li>
               <li>
                 <span
