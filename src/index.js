@@ -8,6 +8,7 @@ import {
   FiltersProvider,
   AuthProvider,
   WishlistProvider,
+  CartProvider,
 } from "./frontend/contexts";
 
 // Call make Server
@@ -20,7 +21,9 @@ ReactDOM.render(
         <ProductsProvider>
           <FiltersProvider>
             <WishlistProvider>
-              <App />
+              <CartProvider>
+                <App />
+              </CartProvider>
             </WishlistProvider>
           </FiltersProvider>
         </ProductsProvider>

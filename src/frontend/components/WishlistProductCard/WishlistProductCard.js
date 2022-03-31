@@ -1,11 +1,20 @@
 import React from "react";
-import { useWishlist } from "../../contexts";
+import { useWishlist, useCart } from "../../contexts";
 import "./WishlistProductCard.css";
 
 function WishlistProductCard({ product }) {
   const { name, description, price, imageUrl } = product;
 
   const { removeProductFromWishlist } = useWishlist();
+  const { cart, addProductToCart, updateQuantityOfProductInCart } = useCart();
+
+  const addToCartHandler = (product) => {
+    if (cart.find((cartProduct) => cartProduct._id === product._id)) {
+      updateQuantityOfProductInCart(product._id, "increment");
+    } else {
+      addProductToCart(product);
+    }
+  };
 
   return (
     <div className="wishlist-item">
@@ -16,7 +25,10 @@ function WishlistProductCard({ product }) {
       <div className="wishlist-primary">
         <h2 className="wishlist-product-name">{name}</h2>
         <p className="wishlist-product-description">{description}</p>
-        <button className="btn btn-brand btn-accent wishlist-cart-btn">
+        <button
+          className="btn btn-brand btn-accent wishlist-cart-btn"
+          onClick={() => addToCartHandler(product)}
+        >
           Add to Cart
         </button>
       </div>

@@ -41,6 +41,16 @@
   color: var(--ghost-color);
 }
 
+.badge {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: var(--info-color);
+}
+
+.badge-position {
+  margin: -12px;
+  right: 126px;
+}
+
 .header-account-link {
   padding-bottom: 5px;
 }

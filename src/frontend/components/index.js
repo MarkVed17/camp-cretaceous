@@ -12,3 +12,5 @@ export { ProductCard } from "./ProductCard/ProductCard";
 export { StarRating } from "./StarRating/StarRating";
 export { PrivateRoute } from "./PrivateRoute/PrivateRoute";
 export { WishlistProductCard } from "./WishlistProductCard/WishlistProductCard";
+export { CartProductCard } from "./CartProductCard/CartProductCard";
+export { CartSummary } from "./CartSummary/CartSummary";

@@ -3,3 +3,7 @@ export { signUpService } from "./auth-services/signUpService";
 export { getWishlistService } from "./wishlist-services/getWishlistService";
 export { moveProductToWishlistService } from "./wishlist-services/moveProductToWishlistService";
 export { removeProductFromWishlistService } from "./wishlist-services/removeProductFromWishlistService";
+export { getCartService } from "./cart-services/getCartService";
+export { addProductToCartService } from "./cart-services/addProductToCartService";
+export { updateQuantityOfProductInCartService } from "./cart-services/updateQuantityOfProductInCartService";
+export { removeProductFromCartService } from "./cart-services/removeProductFromCartService";
