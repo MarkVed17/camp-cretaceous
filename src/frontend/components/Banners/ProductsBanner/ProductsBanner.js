@@ -6,16 +6,20 @@ import { Link } from "react-router-dom";
 
 function ProductsBanner({ title }) {
   const { products } = useProducts();
-  let start = 0,
-    end = 3;
 
-  (() => {
+  const setIndex = () => {
     if (title === "Limited Editions") {
-      return (start = 0), (end = 3);
+      let start = 0,
+        end = 3;
+      return { start, end };
     } else {
-      return (start = 9), (end = 12);
+      let start = 9,
+        end = 12;
+      return { start, end };
     }
-  })();
+  };
+
+  const { start, end } = setIndex();
 
   return (
     <div className="home-screen-row">
