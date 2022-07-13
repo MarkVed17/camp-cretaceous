@@ -10,13 +10,17 @@ function CartScreen() {
       <h1 className="cart-heading">Cart</h1>
 
       {/* <!-- Cart --> */}
-      <div className="cart-container">
-        {cart.map((cartProduct) => (
-          <CartProductCard key={cartProduct._id} product={cartProduct} />
-        ))}
-      </div>
-      
-      <CartSummary />
+      {cart.length !== 0 ? (
+        <div className="cart-container">
+          {cart.map((cartProduct) => (
+            <CartProductCard key={cartProduct._id} product={cartProduct} />
+          ))}
+        </div>
+      ) : (
+        <div className="cart-message"> Looks empty! </div>
+      )}
+
+      {cart.length !== 0 && <CartSummary />}
     </div>
   );
 }
