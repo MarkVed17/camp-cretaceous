@@ -6,13 +6,23 @@ import { Link } from "react-router-dom";
 
 function ProductsBanner({ title }) {
   const { products } = useProducts();
+  let start = 0,
+    end = 3;
+
+  (() => {
+    if (title === "Limited Editions") {
+      return (start = 0), (end = 3);
+    } else {
+      return (start = 9), (end = 12);
+    }
+  })();
 
   return (
     <div className="home-screen-row">
       <div className="cards-group-container">
         <h1 className="home-sub-heading">{title}</h1>
 
-        {products.slice(0, 3).map((product) => (
+        {products.slice(start, end).map((product) => (
           <HomeProductCard key={product._id} product={product} />
         ))}
       </div>
