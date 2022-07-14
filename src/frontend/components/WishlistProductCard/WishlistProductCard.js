@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useWishlist, useCart } from "../../contexts";
 import "./WishlistProductCard.css";
 
@@ -6,11 +7,13 @@ function WishlistProductCard({ product }) {
   const { name, description, price, imageUrl } = product;
 
   const { removeProductFromWishlist } = useWishlist();
-  const { cart, addProductToCart, updateQuantityOfProductInCart } = useCart();
+  const { cart, addProductToCart } = useCart();
+
+  const navigate = useNavigate();
 
   const addToCartHandler = (product) => {
     if (cart.find((cartProduct) => cartProduct._id === product._id)) {
-      updateQuantityOfProductInCart(product._id, "increment");
+      navigate("/cart");
     } else {
       addProductToCart(product);
     }
@@ -29,7 +32,9 @@ function WishlistProductCard({ product }) {
           className="btn btn-brand btn-accent wishlist-cart-btn"
           onClick={() => addToCartHandler(product)}
         >
-          Add to Cart
+          {cart.find((cartProduct) => cartProduct._id === product._id)
+            ? "Go to Cart"
+            : "Add to Cart"}
         </button>
       </div>
 

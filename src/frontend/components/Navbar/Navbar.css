@@ -46,7 +46,12 @@
   background-color: var(--info-color);
 }
 
-.badge-position {
+.wishlist-badge-position {
+  margin: -12px;
+  right: 185px;
+}
+
+.cart-badge-position {
   margin: -12px;
   right: 126px;
 }

@@ -7,3 +7,8 @@
   gap: 1rem;
   padding-bottom: 2rem;
 }
+
+.wishlist-message {
+  margin: auto;
+  color: var(--base-gray-color);
+}

@@ -12,9 +12,16 @@ function WishlistScreen() {
       <h1 className="wishlist-heading">Wishlist</h1>
 
       {/* <!-- Wishlist Items --> */}
-      {wishlist.map((product) => (
-        <WishlistProductCard key={product._id} product={product} />
-      ))}
+
+      {wishlist.length !== 0 ? (
+        <>
+          {wishlist.map((product) => (
+            <WishlistProductCard key={product._id} product={product} />
+          ))}
+        </>
+      ) : (
+        <div className="wishlist-message">Looks empty!</div>
+      )}
     </div>
   );
 }

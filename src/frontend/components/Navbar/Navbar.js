@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AUTH_TOKEN } from "../../constants/authConstants";
-import { useAuth, useCart } from "../../contexts";
+import { useAuth, useCart, useWishlist } from "../../contexts";
 import "./Navbar.css";
 
 function Navbar() {
   const [dropDownMenu, setDropDownMenu] = useState(false);
   const { auth, setAuth } = useAuth();
+  const { wishlist } = useWishlist();
   const { cartSummary } = useCart();
   const { cartTotalProducts } = cartSummary;
 
@@ -53,6 +54,11 @@ function Navbar() {
                 >
                   Wishlist
                 </NavLink>
+                {wishlist.length !== 0 && (
+                  <span className="badge wishlist-badge-position">
+                    {wishlist.length}
+                  </span>
+                )}
               </li>
               <li>
                 <NavLink
@@ -64,7 +70,7 @@ function Navbar() {
                   Cart
                 </NavLink>
                 {cartTotalProducts !== 0 && (
-                  <span className="badge badge-position">
+                  <span className="badge cart-badge-position">
                     {cartTotalProducts}
                   </span>
                 )}

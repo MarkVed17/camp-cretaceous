@@ -7,12 +7,26 @@ import { Link } from "react-router-dom";
 function ProductsBanner({ title }) {
   const { products } = useProducts();
 
+  const setIndex = () => {
+    if (title === "Limited Editions") {
+      let start = 0,
+        end = 3;
+      return { start, end };
+    } else {
+      let start = 9,
+        end = 12;
+      return { start, end };
+    }
+  };
+
+  const { start, end } = setIndex();
+
   return (
     <div className="home-screen-row">
       <div className="cards-group-container">
         <h1 className="home-sub-heading">{title}</h1>
 
-        {products.slice(0, 3).map((product) => (
+        {products.slice(start, end).map((product) => (
           <HomeProductCard key={product._id} product={product} />
         ))}
       </div>
