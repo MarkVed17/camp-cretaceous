@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AUTH_TOKEN } from "../../constants/authConstants";
 import { useAuth, useCart, useWishlist } from "../../contexts";
 import "./Navbar.css";
+import { useOnClickOutside } from "../../hooks";
 
 function Navbar() {
   const [dropDownMenu, setDropDownMenu] = useState(false);
@@ -19,6 +20,9 @@ function Navbar() {
       token: null,
     }));
   };
+
+  const ref = useRef();
+  useOnClickOutside(ref, () => setDropDownMenu(false));
 
   return (
     <>
@@ -89,12 +93,13 @@ function Navbar() {
       </header>
       {dropDownMenu &&
         (!auth.status ? (
-          <div className="dropDown">
+          <div ref={ref} className="dropDown">
             <NavLink
               to="/signin"
               className={({ isActive }) =>
                 isActive ? "header-link-active" : "header-link"
               }
+              onClick={() => setDropDownMenu(false)}
             >
               Sign-In
             </NavLink>
@@ -103,18 +108,22 @@ function Navbar() {
               className={({ isActive }) =>
                 isActive ? "header-link-active" : "header-link"
               }
+              onClick={() => setDropDownMenu(false)}
             >
               Sign-Up
             </NavLink>
           </div>
         ) : (
-          <div className="dropDown">
+          <div ref={ref} className="dropDown">
             <NavLink
               to="/signin"
               className={({ isActive }) =>
                 isActive ? "header-link-active" : "header-link"
               }
-              onClick={() => signOutHandler(setAuth)}
+              onClick={() => {
+                signOutHandler(setAuth);
+                setDropDownMenu(false);
+              }}
             >
               Logout
             </NavLink>
