@@ -1,5 +1,5 @@
 
-# [Camp Cretaceous](https://camp-cretaceous.netlify.app/) | E-Commerce App for dinoheads 📝
+# [Camp Cretaceous](https://camp-cretaceous.netlify.app/) | E-Commerce App for dinoheads 🦕
 
 Camp Cretaceous is home to a unique collection of everything from Jurassic Park franchise. Gear up for the sequel.
 
@@ -9,6 +9,7 @@ Camp Cretaceous is home to a unique collection of everything from Jurassic Park 
 
 ## Demo
 
+https://user-images.githubusercontent.com/59828215/179353603-699f0db6-64b5-4608-851a-3f95aa7a32c0.mp4
 
 ## Features
 
