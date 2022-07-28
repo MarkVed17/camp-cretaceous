@@ -35,12 +35,7 @@ function CartSummary() {
       description: "Thank you for trusting us",
       image: "",
 
-      handler: async (response) => {
-        const { razorpay_payment_id } = await response;
-        const orderData = {
-          orderAmount: cartTotalAmount,
-          razorpayId: razorpay_payment_id,
-        };
+      handler: async () => {
         await clearCartService(setCart, token);
         navigate("/products");
       },
