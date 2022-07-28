@@ -7,3 +7,5 @@ export { getCartService } from "./cart-services/getCartService";
 export { addProductToCartService } from "./cart-services/addProductToCartService";
 export { updateQuantityOfProductInCartService } from "./cart-services/updateQuantityOfProductInCartService";
 export { removeProductFromCartService } from "./cart-services/removeProductFromCartService";
+export { clearCartService } from "./cart-services/clearCartService";
+export { loadScript } from "./loadScript";
