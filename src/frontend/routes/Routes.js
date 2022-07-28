@@ -9,6 +9,8 @@ import {
   WishlistScreen,
   SignInScreen,
   SignUpScreen,
+  CheckoutScreen,
+  OrderSummaryScreen,
 } from "../screens";
 import Mockman from "mockman-js";
 import { ScrollToTop } from "../components";
@@ -33,6 +35,22 @@ const Router = () => {
           element={
             <PrivateRoute>
               <WishlistScreen />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/checkout"
+          element={
+            <PrivateRoute>
+              <CheckoutScreen />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/orderSummary"
+          element={
+            <PrivateRoute>
+              <OrderSummaryScreen />
             </PrivateRoute>
           }
         />

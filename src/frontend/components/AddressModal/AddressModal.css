@@ -1,0 +1,58 @@
+.address-modal-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-bg-color);
+}
+
+.address-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 1.5rem;
+  background-color: var(--card-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+
+.edit-address-action {
+  color: var(--body-bg-color);
+  font-weight: 600;
+  width: fit-content;
+  margin: auto;
+}
+
+.address-modal-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-label {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.states-list > option {
+  font-family: "PT Sans Narrow", sans-serif;
+  background: #252525;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  font-size: 1rem;
+  color: var(--base-gray-color);
+  border: 1px solid var(--base-gray-color);
+}
+
+.address-modal-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}

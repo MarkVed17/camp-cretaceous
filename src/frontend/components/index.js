@@ -15,3 +15,5 @@ export { WishlistProductCard } from "./WishlistProductCard/WishlistProductCard";
 export { CartProductCard } from "./CartProductCard/CartProductCard";
 export { CartSummary } from "./CartSummary/CartSummary";
 export { ScrollToTop } from "./ScrollToTop/ScrollToTop";
+export { AddressCard } from "./AddressCard/AddressCard";
+export { AddressModal } from "./AddressModal/AddressModal";

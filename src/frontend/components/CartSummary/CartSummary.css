@@ -44,3 +44,18 @@ h4 {
   color: var(--body-bg-color);
   font-weight: 600;
 }
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address > h2 {
+  align-self: center;
+}
+
+.address-details {
+  text-align: left;
+  color: var(--font-color);
+}

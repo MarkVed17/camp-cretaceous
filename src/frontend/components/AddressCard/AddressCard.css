@@ -1,0 +1,38 @@
+.address-main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5%;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto 0 auto;
+}
+
+.select-address {
+  margin: 0;
+}
+
+.address-action-btn {
+  color: var(--body-bg-color);
+  font-weight: 600;
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-card {
+  text-align: left;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #252525;
+}
+
+.address-card > span,
+p {
+  color: var(--font-color);
+}

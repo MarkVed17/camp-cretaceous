@@ -13,6 +13,18 @@ export const users = [
     lastName: "Lahane",
     email: "vedant@example.com",
     password: "vedant123",
+    address: [
+      {
+        _id: uuid(),
+        name: "Vedant Lahane",
+        mobile: "9999999999",
+        area: "Colaba",
+        locality: "Near Cafe Mondegar",
+        pincode: "444444",
+        city: "Mumbai",
+        state: "Maharashtra",
+      },
+    ],
     createdAt: formatDate(),
     updatedAt: formatDate(),
   },

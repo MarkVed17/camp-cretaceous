@@ -5,6 +5,7 @@ import "./CartScreen.css";
 
 function CartScreen() {
   const { cart } = useCart();
+  
   return (
     <div className="cart-management-container">
       <h1 className="cart-heading">Cart</h1>
