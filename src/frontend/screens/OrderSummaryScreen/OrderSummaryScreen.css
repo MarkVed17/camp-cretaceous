@@ -1,0 +1,25 @@
+.ordersummary-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto 0 auto;
+}
+
+.summary-heading {
+  flex-basis: 100%;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 70%;
+  gap: 1rem;
+}
+
+.cart-message {
+  margin: auto;
+  color: var(--base-gray-color);
+}
