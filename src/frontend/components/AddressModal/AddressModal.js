@@ -34,7 +34,7 @@ const AddressModal = ({ isEdit, address, modalOpen, closeModal }) => {
     if (isEdit) {
       setAddressInput(initialState);
     }
-  }, [isEdit]);
+  }, [isEdit, initialState]);
 
   if (!modalOpen) return null;
 
